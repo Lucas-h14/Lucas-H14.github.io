@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Usuarios</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            body {
+                background-image: url('fondo123.jpg'); 
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh; 
+        }
+
+
+        .form-register{
+            width: 400px;
+            background-color: rgb(42, 42, 193);
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+        }
+        .form-register h4 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .controls{
+            width: 100%;
+            background: rgb(197, 226, 228);
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #1f53c5;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+        .form-register p {
+            height: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .form-register a {
+            color: white;
+            text-decoration: none;
+        }
+        .form-register a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .form-register .botons {
+            width: 100%;
+            background:#1f53c5 ;
+            border: none;
+            padding: 12px;
+            color: white;
+            margin: 16px 0;
+            font-size: 16px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese Su Nombre">
+        <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese Sus Apellidos">
+        <input class="controls" type="text" id="documento" name="documento" placeholder="Ingrese Su Documento" pattern="[0-9]{6,12}" required
+        title="Debe contener entre 6 y 12 dígitos numéricos">
+        <form action="index.html" method="get">
+            <label for="municipio">¿De qué municipio del Valle de Aburrá nos contacta?</label>
+            
+            <select id="municipio" name="municipio" required>
+                <option value="" disabled selected>Seleccione su municipio</option>
+                <option value="Medellin">Medellín</option>
+                <option value="Itagui">Itagüí</option>
+                <option value="Envigado">Envigado</option>
+                <option value="Bello">Bello</option>
+                <option value="Sabaneta">Sabaneta</option>
+                <option value="La estrella">La Estrella</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Copacabana">Copacabana</option>
+                <option value="Girardota">Girardota</option>
+                <option value="Barbosa">Barbosa</option>
+            </select>
+            <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese Su Correo">
+            <input class="controls" type="password" name="Correo" id="Correo" placeholder="Ingrese Su Contraseña">
+            <p>Estoy Deacuerdo Con <a href="#">Terminos Y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar"> 
+            <p><a href="¿Ya Tengo Cuenta?"></a></p>
+            <br><br>
+            
+        </form>
+    </section>
+    
+</body>
+</html>
